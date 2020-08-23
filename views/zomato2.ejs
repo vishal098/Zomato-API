@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/home/vishal/Desktop/Zomato_API/views/k.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Restaurant</title>
+    <link rel="icon" href="data:image/png;base64,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"
+        type="image/x-icon">
+
+    <style>
+        .header {
+            box-sizing: border-box;
+            background-color: red;
+            padding: 10px;
+        }
+        
+        .search_bar2 {
+            display: flex;
+            margin-left: 80vw;
+            margin-top: -40px;
+        }
+        
+        .example input {
+            height: 22px;
+            border-radius: 10px;
+        }
+        
+        .example button {
+            background-color: rgb(194, 149, 194);
+            margin-right: -36px;
+            width: 31px;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        
+        .content {
+            display: flex;
+            box-sizing: border-box;
+            background-color: lightgrey;
+            border-radius: 12px 0px 0px 12px;
+            height: 316px;
+            margin: 3vw 7vw;
+        }
+        
+        .content text {
+            margin: -31vw 0px 0px 30vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid red;
+        }
+        
+        .image img {
+            margin-bottom: 15px;
+            margin-right: 220px;
+            height: 315px;
+            width: 390px;
+            border-radius: 12px;
+        }
+        
+        .content details {
+            padding-right: 20px;
+            font-size: 20px;
+        }
+        
+        .image {
+            padding-left: 1px;
+        }
+        
+        .txt {
+            margin-left: auto;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: rgb(229, 229, 229);" class="body1">
+        <div class="header">
+            <h1 style="box-sizing: border-box; text-align: center; font-family: 'Lato', sans-serif; color: #fff;">Zomato</h1>
+            <div class="search_bar2">
+                <form class="example" action="/search" method="post">
+                    <input type="text" placeholder="Search.." name="city">
+                    <button type="submit">  <i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <%for(var i of data){%>
+
+            <div class="content">
+                <div class="image">
+                    <img src=<%=i.featured_image %> >
+                </div>
+                <div class="txt">
+                    <center>
+                        <a style="font-size: 13px; color: red;" href=<%=i.url %> >
+                            <h1>
+                                <%= i.name %>
+                            </h1>
+                        </a>
+                        <p style=" font-size: 20px; font-weight: bold;" class="address">
+                            <%= i.location %>
+                        </p>
+                    </center>
+                    <hr>
+                    <table class="details">
+                        <tbody>
+                            <tr>
+                                <td style=" font-size: 20px;" class="key">Average Cost For Two:</td>
+                                <td>
+                                    <%= i.average_cost_for_two %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;" class="key">Price Range:</td>
+                                <td>
+                                    <%= i.price_range %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;" class="key">Has Online Delivery:</td>
+                                <td>
+                                    <%= i.has_online_delivery %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-bottom: 100px; font-size: 20px;" class="key">Cuisines:</td>
+                                <td style="padding-bottom: 80px;">
+                                    <%= i.cuisines %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <%}%>
+    </div>
+</body>
+
+</html>
